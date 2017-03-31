@@ -1,11 +1,12 @@
 /*
   Team Name: QQ
-  Team Members: Yu Qi Wu, Ri Hui Zheng,
+  Team Members: Yu Qi Wu, Ri Hui Zheng, Elaina Chung
   APCS2 pd3
   LAB02 All Hands on Deque!
  */
 
 public interface Deque<E>{
+    /*
     public boolean add(E e);
     
     public void addFirst(E e);
@@ -27,4 +28,6 @@ public interface Deque<E>{
     public e removeLast();
 
     public int size();
+    */
 }
+
