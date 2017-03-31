@@ -6,6 +6,7 @@
  */
 
 public interface Deque<E>{
+    /*
     public boolean add(E e);
     
     public void addFirst(E e);
@@ -27,4 +28,6 @@ public interface Deque<E>{
     public e removeLast();
 
     public int size();
+    */
 }
+
