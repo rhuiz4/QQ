@@ -6,28 +6,16 @@
  */
 
 public interface Deque<E>{
-    /*
+    
     public boolean add(E e);
     
     public void addFirst(E e);
     
-    public void addLast(E e);
-
-    public E peek();
-    
-    public E peekFirst();
-    
-    public E peekLast();
-    
-    public E pop();
-    
     public E remove();
 
-    public e removeFirst();
-
-    public e removeLast();
+    public E removeFirst();
 
     public int size();
-    */
+    
 }
 
