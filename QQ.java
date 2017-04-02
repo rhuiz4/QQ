@@ -93,8 +93,13 @@ public class QQ<E> implements Deque<E>{
 	    return "";
 	String retStr = "";
 	DLLNode tmp = _front;
+<<<<<<< HEAD
 	retStr += tmp.getCargo() + " ";
 	while (tmp.getNext() != null){
+=======
+	while (tmp != null){
+	    retStr += tmp.getCargo() + " ";
+>>>>>>> 19d6f081aacf42dc8f63b340749c3205c660925f
 	    tmp = tmp.getNext();
 	    retStr += tmp.getCargo() + " ";
 	}
@@ -104,6 +109,7 @@ public class QQ<E> implements Deque<E>{
 
     public static void main(String[] args){
 	// test case
+<<<<<<< HEAD
 	Deque<String> test = new QQ<String>();
 
 	// test add()
@@ -115,6 +121,18 @@ public class QQ<E> implements Deque<E>{
 	System.out.println(test + "\n"); // I am a test case
 
 	// test addFirst
+=======
+	Deque test = new QQ();
+	System.out.println(test);
+	/*
+	test.add("I");
+	test.add("am");
+	test.add("a");
+	test.add("test");
+	test.add("case");
+	System.out.println(test);
+	*/
+>>>>>>> 19d6f081aacf42dc8f63b340749c3205c660925f
 	test.addFirst("Hello,");
 	System.out.println(test + "\n"); // Hello, I am a test case
 
