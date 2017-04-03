@@ -8,6 +8,8 @@ addFirst(E e) - adds element e to the beginning of deque
 
 remove() - removes the last element of deque
 
+remove(E e) - removes the first occurence of e
+
 removeFirst() - removes the first element of deque
 
 size() - returns the number of elements in deque
