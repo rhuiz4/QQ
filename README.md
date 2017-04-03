@@ -20,7 +20,11 @@ getFirst() - returns first element in deque without removing
 
 getLast() - returns last element in deque without removing
 
+clear() - clears the deque
 
-## Doubly Lnked Nodes
+isEmpty() - returns whether the deque is empty
 
-We have decided to use a doubly linked nodes because we want more practice with nodes, and using a doubly linked node is helpful for certain methods. For example, add, addFirst, remove, removeFirst, size, getFirst, and getLast are all O(1) using a doubly linked node.
+
+## Doubly Linked Nodes
+
+We have decided to use a doubly linked nodes because we want more practice with nodes, and using a doubly linked node is helpful for certain methods. For example, add, addFirst, remove, removeFirst, size, getFirst, clear() and getLast are all O(1) using a doubly linked node.
