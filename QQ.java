@@ -91,7 +91,7 @@ public class QQ<E> implements Deque<E>{
 	
 	String retStr = "";
 	DLLNode tmp = _front;
-	while (tmp.getNext() != null){
+	while (tmp != null){
 	    retStr += tmp.getCargo() + " ";
 	    tmp = tmp.getNext();
 	}
@@ -103,14 +103,14 @@ public class QQ<E> implements Deque<E>{
 	// test case
 	Deque test = new QQ();
 	System.out.println(test);
-	
+	/*
 	test.add("I");
 	test.add("am");
 	test.add("a");
 	test.add("test");
 	test.add("case");
 	System.out.println(test);
-
+	*/
 	test.addFirst("Hello,");
 	System.out.println(test);
 	System.out.println("First: " + test.getFirst());
