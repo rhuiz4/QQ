@@ -65,4 +65,25 @@ public class QQ<E> implements Deque<E>{
     public int size(){
 	return _size;
     }
+
+    //returns whether this deque contains the specified element
+    public boolean contains(Object o){
+	DLLNode tmp = _front;
+	while (tmp.getNext() != null){
+	    if (tmp.getValue() == o)
+		return true;
+	    tmp = tmp.getNext();
+	}
+	return false;
+    }
+
+    //returns first element without removing
+    public E getFirst(){
+	return _front.getValue();
+    }
+
+    //returns last element without removing
+    public E getLast(){
+	return _tail.getValue();
+    }
 }
