@@ -70,7 +70,7 @@ public class QQ<E> implements Deque<E>{
     public boolean contains(Object o){
 	DLLNode tmp = _front;
 	while (tmp.getNext() != null){
-	    if (tmp.getValue() == o)
+	    if (tmp.getCargo() == o)
 		return true;
 	    tmp = tmp.getNext();
 	}
@@ -79,11 +79,11 @@ public class QQ<E> implements Deque<E>{
 
     //returns first element without removing
     public E getFirst(){
-	return _front.getValue();
+	return _front.getCargo();
     }
 
     //returns last element without removing
     public E getLast(){
-	return _tail.getValue();
+	return _tail.getCargo();
     }
 }
