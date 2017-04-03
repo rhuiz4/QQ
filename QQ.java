@@ -1,14 +1,14 @@
-/*hi
+/*Team QQ -- Rihui Zheng, YuQi Wu, Elaina Chung
+  APCS2 pd3
+  Lab02 -- All Hands on Deque!
+  2017-04-04
  */
 
 public class QQ<E> implements Deque<E>{
     private DLLNode _front, _end; // front and end node
     private int _size; // size of the linked-node
 
-    public static void main(String[] args){
-	// test case
-    }
-
+    
     public void QQ(){
 	_front = new DLLNode(null, null, _end);
 	_end = new DLLNode(null, _front, null);
@@ -79,11 +79,44 @@ public class QQ<E> implements Deque<E>{
 
     //returns first element without removing
     public E getFirst(){
-	return _front.getCargo();
+	return (E)_front.getCargo();
     }
 
     //returns last element without removing
     public E getLast(){
-	return _tail.getCargo();
+	return (E)_end.getCargo();
     }
+    
+    public String toString(){
+	
+	String retStr = "";
+	DLLNode tmp = _front;
+	while (tmp.getNext() != null){
+	    retStr += tmp.getCargo() + " ";
+	    tmp = tmp.getNext();
+	}
+	return retStr;
+    }
+
+
+    public static void main(String[] args){
+	// test case
+	Deque test = new QQ();
+	System.out.println(test);
+	
+	test.add("I");
+	test.add("am");
+	test.add("a");
+	test.add("test");
+	test.add("case");
+	System.out.println(test);
+
+	test.addFirst("Hello,");
+	System.out.println(test);
+	System.out.println("First: " + test.getFirst());
+	System.out.println("Last: " + test.getLast());
+	
+	
+    }
+
 }
