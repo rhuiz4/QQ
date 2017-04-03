@@ -24,6 +24,10 @@ public interface Deque<E>{
     public E getFirst();
 
     public E getLast();
+
+    public void clear();
+
+    public boolean isEmpty();
     
 }
 

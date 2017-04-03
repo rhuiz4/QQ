@@ -10,8 +10,7 @@ public class QQ<E> implements Deque<E>{
 
     
     public void QQ(){
-	_front = new DLLNode(null, null, null);
-	_end = new DLLNode(null, null, null);
+	_front = _end = null;
 	_size = 0;
     }
 
@@ -84,13 +83,24 @@ public class QQ<E> implements Deque<E>{
 	return _size;
     }
 
+    // clear queue
+    public void clear(){
+	_front = null;
+	_end = null;
+	_size = 0;
+    }
+
     //returns whether this deque contains the specified element
     public boolean contains(Object o){
 	DLLNode tmp = _front;
+	if (isEmpty())
+	    return false;
+	if (tmp.getCargo() == o)
+	    return true;	
 	while (tmp.getNext() != null){
+	    tmp = tmp.getNext();
 	    if (tmp.getCargo() == o)
 		return true;
-	    tmp = tmp.getNext();
 	}
 	return false;
     }
@@ -158,7 +168,19 @@ public class QQ<E> implements Deque<E>{
 
 	// test size()
 	System.out.println(test.size()); // 2
+
+	// test contains(Object o)	
+	System.out.println(test.contains("I") );
+	System.out.println(test.contains("am") );
+	System.out.println(test.contains("Hello,") );
 	
+	// test clear()
+	test.clear();
+	System.out.println("\ntest: " + test);
+	System.out.println("size: " + test.size() );
+	
+	// test isEmpty()
+	System.out.println("empty? " + test.isEmpty() );
     }
 
 }
