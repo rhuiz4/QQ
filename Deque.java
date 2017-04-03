@@ -13,7 +13,7 @@ public interface Deque<E>{
     
     public E remove();
 
-    public E remove(E e);
+    public boolean remove(E e);
 
     public E removeFirst();
 
