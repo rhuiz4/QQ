@@ -16,6 +16,12 @@ public interface Deque<E>{
     public E removeFirst();
 
     public int size();
+
+    public boolean contains(Object o);
+
+    public E getFirst();
+
+    public E getLast();
     
 }
 
