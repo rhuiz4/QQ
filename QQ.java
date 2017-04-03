@@ -17,7 +17,7 @@ public class QQ<E> implements Deque<E>{
 
     // add a variable to the end of the linked-node
     public boolean add(E e){
-	if (_size == 0){
+	if ( isEmpty() ){
 	    _front = new DLLNode(e, null, _end);
 	}
 	else{
@@ -38,7 +38,7 @@ public class QQ<E> implements Deque<E>{
 
     // add a variable to the front of the linked-node
     public void addFirst(E e){
-	if (_size == 0)
+	if ( isEmpty() )
 	    _front.setCargo(e);
 	else{
 	    DLLNode temp = new DLLNode(e, null, _front);
@@ -103,6 +103,11 @@ public class QQ<E> implements Deque<E>{
     //returns last element without removing
     public E getLast(){
 	return (E)_end.getCargo();
+    }
+
+    // returns true if size==0, else false
+    public boolean isEmpty(){
+	return _size==0;
     }
     
     public String toString(){
