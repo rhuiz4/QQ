@@ -57,6 +57,19 @@ public class QQ<E> implements Deque<E>{
 	return ret;
     }
 
+    // removes the first oocurence of e
+    public boolean remove(E e){
+        DLLNode tmp = _front;
+	while(tmp.getNext() != null){
+	    if(tmp.getCargo() == e){
+		tmp = tmp.getNext();
+		tmp.setPre(tmp.getPre().getPre());
+		return true;
+	    }
+	}
+	return false;
+    }
+    
     // add a variable to the front of the linked-node
     public E removeFirst(){
 	E ret = (E)(_front.getCargo());
