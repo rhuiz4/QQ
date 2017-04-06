@@ -90,7 +90,7 @@ public class DequeTester {
         // try {
         //     Iterator<Integer> numsIt = d2.iterator();
         //     Iterator<Deque<Integer>> factorsIt = dd2.iterator();
-        
+	
         //     //parellel iterators:
         //     Deque<Integer> cur;
         //     while (factorsIt.hasNext()&& numsIt.hasNext()) {

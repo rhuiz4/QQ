@@ -4,8 +4,6 @@
   2017-04-04
  */
 
-import java.util.Iterator;
-
 public class QQ<E> implements Deque<E>{
     private DLLNode _front, _end; // front and end node
     private int _size; // size of the linked-node
@@ -97,11 +95,11 @@ public class QQ<E> implements Deque<E>{
 	DLLNode tmp = _front;
 	if (isEmpty())
 	    return false;
-	if (tmp.getCargo() == o)
+	if (tmp.getCargo().equals(o))
 	    return true;	
 	while (tmp.getNext() != null){
 	    tmp = tmp.getNext();
-	    if (tmp.getCargo() == o)
+	    if (tmp.getCargo().equals(o))
 		return true;
 	}
 	return false;
