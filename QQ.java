@@ -128,7 +128,7 @@ public class QQ<E> implements Deque<E>{
 	retStr += tmp.getCargo() + " ";
 	while (tmp.getNext() != null){
 	    tmp = tmp.getNext();
-	    retStr += (String)tmp.getCargo() + " ";
+	    retStr += Integer.toString((int)tmp.getCargo()) + " ";
 	}
 	return retStr;
     }
