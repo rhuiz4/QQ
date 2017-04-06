@@ -1,4 +1,4 @@
-# QQ
+# QQ - Elaina Chung, YuQi Wu, Rihui Zheng
 
 ## Our Method Selections:
 
@@ -28,3 +28,10 @@ isEmpty() - returns whether the deque is empty
 ## Doubly Linked Nodes
 
 We have decided to use a doubly linked nodes because we want more practice with nodes, and using a doubly linked node is helpful for certain methods. For example, add, addFirst, remove, removeFirst, size, getFirst, clear() and getLast are all O(1) using a doubly linked node.
+
+
+## Fixed Bugs
+
+- Changed == to equals() 
+- Made toString able to process more than just String QQ
+- Fixed addFirst()'s inability to process QQ with the size of 0
