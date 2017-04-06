@@ -1,4 +1,5 @@
-# QQ - Elaina Chung, YuQi Wu, Rihui Zheng
+# QQ 
+## Elaina Chung, YuQi Wu, Rihui Zheng
 
 ## Our Method Selections:
 
