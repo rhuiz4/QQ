@@ -5,8 +5,6 @@ HW29 Streess is the Best
 2017-04-05
 */
 
-import java.util.Iterator;
-
 //test Deque implementations by interacting with universally available object
 //Instructions on screen should match input
 //if any inputs do not show up, likely a toString() mistake somewhere
@@ -86,13 +84,13 @@ public class DequeTester {
         // for (Integer i : d2) sop(i);
         // for (Deque<Integer> fac: dd2) sop(fac);
         // sop("\n\n");
-        //
-        //
-        // //ITR WORK: TIME TO REMOVE THE NONPRIMES:
+        
+        
+        //ITR WORK: TIME TO REMOVE THE NONPRIMES:
         // try {
         //     Iterator<Integer> numsIt = d2.iterator();
         //     Iterator<Deque<Integer>> factorsIt = dd2.iterator();
-        //
+        
         //     //parellel iterators:
         //     Deque<Integer> cur;
         //     while (factorsIt.hasNext()&& numsIt.hasNext()) {
@@ -107,10 +105,10 @@ public class DequeTester {
         //     }
         // }
         // catch (Exception e) {
-            sop("Uhoh! You didn't code an iterator. How'd you even get past compiling?");
+        //     sop("Uhoh! You didn't code an iterator. How'd you even get past compiling?");
         // }
 
-        sop("\n\nAt this point, d2 should only contain prime numbers. Let's see:");
-        sop(d2);
+        // sop("\n\nAt this point, d2 should only contain prime numbers. Let's see:");
+        // sop(d2);
     }
 }

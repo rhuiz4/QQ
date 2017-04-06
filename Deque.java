@@ -5,7 +5,7 @@
   LAB02 All Hands on Deque!
  */
 
-public interface Deque<E>{
+public interface Deque<E> extends Iterable<E>{
     
     public boolean add(E e);
     
